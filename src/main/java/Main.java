@@ -18,6 +18,12 @@ public class Main {
         son.setAddress("Москва");
         System.out.println(son);
 
+        Person pap = new PersonBuilder()
+                .setName("Vova")
+                .setSurname("Good")
+                .build();
+        System.out.println(pap.getAge() + "pap");
+
 
         try {
             // Не хватает обяхательных полей
